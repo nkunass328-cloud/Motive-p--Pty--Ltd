@@ -1,400 +1,193 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Motivep (Pty) Ltd | Building, Renovations & Civil Works</title>
-  <meta name="description" content="Motivep (Pty) Ltd – General Building, Renovations, Maintenance and Civil Works in Middelburg, Nkangala District." />
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --card:#111827;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --line:rgba(255,255,255,.10);
-      --brand:#22c55e;
-      --accent:#60a5fa;
-      --warn:#f59e0b;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
-    a{color:inherit}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
-    header{
-      padding:44px 0 24px;
-      background:linear-gradient(180deg, rgba(96,165,250,.16), rgba(0,0,0,0));
-      border-bottom:1px solid var(--line);
-    }
-    .top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:12px}
-    .mark{
-      width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
-      font-weight:900;letter-spacing:.6px;color:var(--accent);
-      background:rgba(96,165,250,.14);
-      border:1px solid rgba(96,165,250,.35);
-    }
-    h1{margin:0;font-size:26px}
-    .sub{margin:6px 0 0;color:var(--muted);line-height:1.4}
-    nav{display:flex;gap:10px;flex-wrap:wrap}
-    nav a{
-      text-decoration:none;padding:8px 12px;border-radius:999px;border:1px solid var(--line);font-size:14px
-    }
-    nav a:hover{border-color:rgba(96,165,250,.5)}
-    .hero{padding:18px 0 0}
-    .heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
-    @media (max-width:900px){.heroGrid{grid-template-columns:1fr}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-    .headline{font-size:34px;margin:0 0 10px}
-    @media (max-width:420px){.headline{font-size:28px}}
-    .lead{margin:0 0 14px;color:var(--muted);line-height:1.6}
-    .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      padding:11px 14px;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid transparent;
-    }
-    .btnPrimary{background:var(--brand);color:#04110a}
-    .btnPrimary:hover{filter:brightness(.95)}
-    .btnGhost{background:transparent;border-color:var(--line)}
-    .btnGhost:hover{border-color:rgba(96,165,250,.5)}
-    section{padding:26px 0}
-    h2{margin:0 0 12px;font-size:22px}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .list{margin:0;padding-left:18px;color:var(--muted);line-height:1.8}
-    .k{color:var(--accent);font-weight:800}
-    .pill{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:8px 12px;border-radius:999px;border:1px solid var(--line);
-      font-size:13px;margin:6px 8px 0 0;color:var(--text);
-    }
-    .dot{width:8px;height:8px;border-radius:999px;background:var(--warn)}
-    table{width:100%;border-collapse:collapse;margin-top:10px}
-    th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
-    th{color:#cbd5e1;font-size:13px}
-    td{color:var(--muted);font-size:14px;line-height:1.5}
-    footer{border-top:1px solid var(--line);padding:18px 0 26px;color:var(--muted);font-size:13px;text-align:center}
-    .small{font-size:13px}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Motivep Pty Ltd | Company Profile</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0b0f14;
+  color:#e5e7eb;
+}
+
+header{
+  padding:40px 20px;
+  text-align:center;
+  background:#111827;
+}
+
+h1{margin:0}
+h2{margin-top:40px}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.card{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+th,td{
+  border-bottom:1px solid #333;
+  padding:12px;
+  text-align:left;
+}
+
+th{
+  color:#9ca3af;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#9ca3af;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">
-        <div class="mark">MP</div>
-        <div>
-          <h1>Motivep (Pty) Ltd</h1>
-          <div class="sub">General Building • Renovations • Maintenance • Civil Works • Middelburg (Nkangala District)</div>
-        </div>
-      </div>
-
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#compliance">Compliance</a>
-        <a href="#references">References</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-
-    <div class="hero">
-      <div class="heroGrid">
-        <div class="card">
-          <h2 class="headline">Reliable <span class="k">Building & Civil Works</span> Partner</h2>
-          <p class="lead">
-            Motivep (Pty) Ltd trades in general building, building maintenance, renovations and civil work.
-            We strive to provide excellent service to all types of industries.
-          </p>
-
-          <div class="btnRow">
-            <a class="btn btnPrimary" href="mailto:motivepltd@gmail.com">Email Us</a>
-            <a class="btn btnGhost" href="tel:+27630007557">Call: 063 000 7557</a>
-          </div>
-
-          <div style="margin-top:12px">
-            <span class="pill"><span class="dot"></span> General Building</span>
-            <span class="pill"><span class="dot"></span> Renovations & Maintenance</span>
-            <span class="pill"><span class="dot"></span> Civil Construction</span>
-            <span class="pill"><span class="dot"></span> Logistics & Supplying</span>
-          </div>
-
-          <p class="small" style="margin-top:12px">
-            <span class="k">Reg No:</span> 2015/232159/07 &nbsp;•&nbsp; <span class="k">Income Tax:</span> 9289330194
-          </p>
-        </div>
-
-        <div class="card">
-          <h2 style="margin:0 0 10px;">Quick Company Info</h2>
-          <ul class="list">
-            <li><b>Company:</b> Private Company (Pty) Ltd</li>
-            <li><b>Area:</b> Middelburg, Nkangala District</li>
-            <li><b>Directors:</b> Isaac Machike (Executive) & Jan Mabhena (Non-Executive)</li>
-            <li><b>Contact:</b> 063 000 7557 / 076 185 7338</li>
-            <li><b>Email:</b> motivepltd@gmail.com</li>
-          </ul>
-          <div class="btnRow" style="margin-top:14px">
-            <a class="btn btnGhost" href="#references">View References</a>
-            <a class="btn btnPrimary" href="#contact">Request a Quote</a>
-          </div>
-          <p class="small" style="margin-top:10px;color:var(--muted)">
-            Note: Banking details and physical address can be added if provided.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<h1>MOTIVEP PTY LTD</h1>
+<p>Construction • Maintenance • Plumbing • Fire Safety Services</p>
 </header>
 
-<main class="wrap">
+<div class="container">
 
-  <section id="about">
-    <h2>Company Introduction</h2>
-    <div class="card">
-      <p style="margin:0;color:var(--muted);line-height:1.8">
-        Motivep (Pty) Ltd trades in General Building, Maintenance, and Civil work. We strive to provide excellent service to all types of industries.
-        The company is managed by Executive Director Isaac Machike and Non-Executive Director Jan Mabhena.
-      </p>
-
-      <h3 style="margin:14px 0 8px;">Mission</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.8">
-        To contribute meaningfully to the socio-economic advancement of all communities.
-      </p>
-
-      <h3 style="margin:14px 0 8px;">Vision</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.8">
-        To be a quality and professional service delivering company that meets clients’ needs and demands, and adds value.
-      </p>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 style="margin:0 0 6px;">General Building</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Brickwork, construction and general building services.
-        </p>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Maintenance & Renovations</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Building maintenance, upgrades, repairs and renovations.
-        </p>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Civil Construction</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Civil works and related construction services.
-        </p>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Logistics & Supplying</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Supplying and logistics support for project delivery.
-        </p>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Principles & Values</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Service delivery excellence, responsiveness, mutual respect, trust, and results-focused work ethic.
-        </p>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Request a Quote</h3>
-        <p style="margin:0 0 10px;color:var(--muted);line-height:1.7">
-          Email us with your project scope and location.
-        </p>
-        <a class="btn btnPrimary" href="mailto:motivepltd@gmail.com?subject=Quote%20Request%20-%20Motivep%20Pty%20Ltd&body=Hi%20Motivep%20Team%2C%0A%0AI%20would%20like%20a%20quote%20for%20the%20following%20project%3A%0A%0AProject%20type%3A%20%0ALocation%3A%20%0ATimeline%3A%20%0ABudget%20range%20(optional)%3A%20%0A%0AThank%20you.">
-          Email for Quote
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="compliance">
-    <h2>Compliance & Accreditations</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Registration</h3>
-        <ul class="list">
-          <li><b>Reg No:</b> 2015/232159/07</li>
-          <li><b>Income Tax:</b> 9289330194</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Memberships</h3>
-        <ul class="list">
-          <li><b>WISA:</b> 37967</li>
-          <li><b>CIDB Register:</b> 10186578 (Grade 1GB & 1CE)</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px;">BEE Status</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          BEE Level 1 (as per business profile).
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:14px">
-      <h3 style="margin:0 0 8px;">Company Structure (Organogram)</h3>
-      <p style="margin:0;color:var(--muted);line-height:1.8">
-        Directors: Isaac Machike & Jan Mabhena • Supervisor: Job Msimango • Safety Officer: Isaac Machike • Administrator: Violence Makofane • Builder/Painter: Siyabonga Khumalo • Plumber: Ayanda Vundla
-      </p>
-    </div>
-  </section>
-
-  <section id="references">
-  <h2>Client List / References</h2>
-
-  <div class="card">
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">
-      <span class="pill"><span class="dot"></span> Verified references</span>
-      <span class="pill"><span class="dot"></span> Project values on request</span>
-      <span class="pill"><span class="dot"></span> Contactable clients</span>
-    </div>
-
-    <p style="margin:0;color:var(--muted);line-height:1.8">
-      Selected reference projects listed in the company profile.
-    </p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Client</th>
-          <th>Project</th>
-          <th>Year</th>
-          <th>Contact</th>
-          <th>Contact Person</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Khulunolwazi Primary School</td>
-          <td>Brick work, plumbing and air conditioners installation</td>
-          <td>2015–2017</td>
-          <td>082 885 5936</td>
-          <td>Ms. C Masilela</td>
-        </tr>
-
-        <tr>
-          <td>Khul’nolwazi Primary School</td>
-          <td>Plumbing work</td>
-          <td>2018</td>
-          <td>082 885 5936</td>
-          <td>Mr. C Masilela</td>
-        </tr>
-
-        <tr>
-          <td>South African Security Agency (SASSA)</td>
-          <td>Servicing of Fire Extinguishers</td>
-          <td>2018</td>
-          <td>013 653 7142</td>
-          <td>Mr. Bonga Sambo</td>
-        </tr>
-
-        <tr>
-          <td>Khul’nolwazi Primary School</td>
-          <td>Pave work &amp; Fire hydrant installation</td>
-          <td>2020</td>
-          <td>082 885 5936</td>
-          <td>Mr. C Masilela</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p class="small" style="margin:12px 0 0;color:var(--muted)">
-      Project values and additional documentation are available on request.
-    </p>
-  </div>
-
-  <div style="margin-top:14px">
-    <h3 style="margin:0 0 10px;">Featured Case Studies</h3>
-
-    <div class="grid">
-      <div class="card">
-        <h3 style="margin:0 0 8px;">Case Study 1: School Maintenance & Installations</h3>
-        <ul class="list">
-          <li><b>Client:</b> Khulunolwazi Primary School</li>
-          <li><b>Scope:</b> Brickwork, plumbing, air conditioner installation</li>
-          <li><b>Period:</b> 2015–2017</li>
-          <li><b>Outcome:</b> Maintenance and installations completed as per scope (client reference available).</li>
-        </ul>
-        <p class="small" style="margin:10px 0 0;color:var(--muted)">
-          Note: Detailed project report can be shared privately on request.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0 0 8px;">Case Study 2: Fire Safety Servicing</h3>
-        <ul class="list">
-          <li><b>Client:</b> South African Security Agency (SASSA)</li>
-          <li><b>Scope:</b> Servicing of fire extinguishers</li>
-          <li><b>Year:</b> 2018</li>
-          <li><b>Outcome:</b> Servicing performed (reference contact available).</li>
-        </ul>
-        <p class="small" style="margin:10px 0 0;color:var(--muted)">
-          Note: Compliance documents available on request.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0 0 8px;">Case Study 3: Paving & Fire Hydrant Installation</h3>
-        <ul class="list">
-          <li><b>Client:</b> Khul’nolwazi Primary School</li>
-          <li><b>Scope:</b> Paving work & fire hydrant installation</li>
-          <li><b>Year:</b> 2020</li>
-          <li><b>Outcome:</b> Installation completed (reference contact available).</li>
-        </ul>
-        <p class="small" style="margin:10px 0 0;color:var(--muted)">
-          Note: Photos can be added when available.
-        </p>
-      </div>
-    </div>
-  </div>
+<section>
+<h2>About Company</h2>
+<div class="card">
+<p>
+Motivep Pty Ltd provides construction, maintenance, plumbing,
+and fire safety services. The company has completed projects
+for schools, government institutions, and private sector clients.
+</p>
+</div>
 </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="grid">
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Phone</h3>
-        <p style="margin:0 0 10px;color:var(--muted);line-height:1.7">
-          063 000 7557 / 076 185 7338
-        </p>
-        <div class="btnRow">
-          <a class="btn btnPrimary" href="tel:+27630007557">Call 063 000 7557</a>
-          <a class="btn btnGhost" href="tel:+27761857338">Call 076 185 7338</a>
-        </div>
-      </div>
+<section>
+<h2>Services</h2>
+<div class="card">
+<ul>
+<li>General Construction</li>
+<li>Brick Work</li>
+<li>Plumbing Installation & Repairs</li>
+<li>Air Conditioner Installation</li>
+<li>Fire Extinguisher Servicing</li>
+<li>Fire Hydrant Installation</li>
+<li>Paving</li>
+<li>Building Maintenance</li>
+</ul>
+</div>
+</section>
 
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Email</h3>
-        <p style="margin:0 0 10px;color:var(--muted);line-height:1.7">
-          motivepltd@gmail.com
-        </p>
-        <a class="btn btnPrimary" href="mailto:motivepltd@gmail.com">Email motivepltd@gmail.com</a>
-      </div>
+<section>
+<h2>Client List / References</h2>
 
-      <div class="card">
-        <h3 style="margin:0 0 6px;">Location</h3>
-        <p style="margin:0;color:var(--muted);line-height:1.7">
-          Middelburg, Nkangala District
-        </p>
-        <p class="small" style="margin:10px 0 0;color:var(--muted)">
-          Add exact address and map when available.
-        </p>
-      </div>
-    </div>
-  </section>
+<div class="card">
+<p>Selected reference projects listed in company profile:</p>
 
-</main>
+<table>
+<thead>
+<tr>
+<th>Client</th>
+<th>Project</th>
+<th>Year</th>
+<th>Contact</th>
+<th>Contact Person</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Khulunolwazi Primary School</td>
+<td>Brick work, plumbing and air conditioners installation</td>
+<td>2015 – 2017</td>
+<td>082 885 5936</td>
+<td>Ms. C Masilela</td>
+</tr>
+
+<tr>
+<td>Khul’nolwazi Primary School</td>
+<td>Plumbing work</td>
+<td>2018</td>
+<td>082 885 5936</td>
+<td>Mr. C Masilela</td>
+</tr>
+
+<tr>
+<td>South African Security Agency (SASSA)</td>
+<td>Servicing of Fire Extinguishers</td>
+<td>2018</td>
+<td>013 653 7142</td>
+<td>Mr. Bonga Sambo</td>
+</tr>
+
+<tr>
+<td>Khul’nolwazi Primary School</td>
+<td>Pave work & Fire hydrant installation</td>
+<td>2020</td>
+<td>082 885 5936</td>
+<td>Mr. C Masilela</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+</section>
+
+<section>
+<h2>Featured Case Studies</h2>
+
+<div class="card">
+<h3>School Maintenance & Installations</h3>
+<ul>
+<li>Client: Khulunolwazi Primary School</li>
+<li>Scope: Brickwork, plumbing, air conditioner installation</li>
+<li>Period: 2015 – 2017</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Fire Safety Servicing</h3>
+<ul>
+<li>Client: South African Security Agency (SASSA)</li>
+<li>Scope: Fire extinguisher servicing</li>
+<li>Year: 2018</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Paving & Fire Hydrant Installation</h3>
+<ul>
+<li>Client: Khul’nolwazi Primary School</li>
+<li>Scope: Paving and fire hydrant installation</li>
+<li>Year: 2020</li>
+</ul>
+</div>
+
+</section>
+
+</div>
 
 <footer>
-  © 2026 Motivep (Pty) Ltd • General Building, Renovations & Civil Works
+© 2026 Motivep Pty Ltd • Company Profile Website
 </footer>
 
 </body>
